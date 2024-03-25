@@ -49,18 +49,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	function text_a() {
 	var a_canvas = document.getElementById("a");
-	var a_context = a_canvas.getContext("2d");
-		a_ context.font = "10px Arial";
-		a_context.fillText("Jean Velasquez", 60, 200);
+	var context = a_canvas.getContext("2d");
+		context.font = "10px Arial";
+		context.fillText("Jean Velasquez", 60, 200);
 
 	}
 	function image_a() {
 	var a_canvas = document.getElementById("a");
-	var a_context = a_canvas.getContext("2d");
+	var context = a_canvas.getContext("2d");
 	var beach = new Image();
 		beach.src = "images/beach.png";
-		beach.onload = function()
+		beach.onload = function(){
 			context.drawImage(beach, 10, 10);
+		};
 	}
 
 </script>
@@ -105,8 +106,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<button onclick="draw_a()">Draw a Rectangle</button>
 
 	<button onclick="text_a()">Draw my Name</button>
-
-	<canvas id="a" width="250" height="210"></canvas>
 	
 	<button onclick="image_a()">Load an Image</button>
 
