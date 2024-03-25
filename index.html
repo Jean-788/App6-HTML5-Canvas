@@ -40,14 +40,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	alert("This file last modified " + docMod); // generates alert box with time stamp. If 			annoying, comment out this entire line.
 	console.log("This file last modified " + docMod); // generates message in javaScript console 	(found in developers tools) with time stamp. 
 
-<!--function below draws a rectangle-->
+//function below draws a rectangle//
 	function draw_a() {
  		var a_canvas = document.getElementById("a"); //finds the <canvas> element in the DOM
  		var a_context = a_canvas.getContext("2d"); //makes the canvas 2 dimensional
   		a_context.fillRect(50, 25, 150, 100); //fills in the rectangle and positions it on canvas
 
 	};
-<!--function below displays my name "Jean Velasquez"-->
+//function below displays my name "Jean Velasquez"//
 	function text_a() {
 	var a_canvas = document.getElementById("a"); //finds the <canvas> element in the DOM
 	var context = a_canvas.getContext("2d"); //makes the canvas 2 dimensional
@@ -55,7 +55,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		context.fillText("Jean Velasquez", 10, 200); //prints and positions my name on the canvas
 
 	};
-<!--function below displays the image of a mango.jpg-->
+//function below displays the image of a mango.jpg//
 	function image_a() {
 	var a_canvas = document.getElementById("a"); //finds the <canvas> element in the DOM
 	var a_context = a_canvas.getContext("2d"); //makes the canvas 2 dimensional
@@ -63,7 +63,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		a_context.drawImage(mango_image, 125, 125, 150, 100);
 
 	};
-<!--function below clears the canvas-->
+//function below clears the canvas//
 	function clear_a() {
   	 var a_canvas = document.getElementById("a"); //finds the <canvas> element in the DOM
    		a_canvas.width = a_canvas.width; //clears canvas
@@ -100,24 +100,24 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Click on the buttons below to see what happens to the canvas!</p> //Explains to the user what they need to do to the website.
+	<p>Click on the buttons below to see what happens to the canvas!</p> <!--Explains to the user what they need to do to the website.-->
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
 
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 
-	<canvas id="a" width="300" height="225" style="border:1px solid #000000;"></canvas> //creates canvas and adds a border + sizing
+	<canvas id="a" width="300" height="225" style="border:1px solid #000000;"></canvas> <!--creates canvas and adds a border + sizing-->
 	
-	<button onclick="draw_a()">Draw a Rectangle</button> //creates button that creates a rectangle on the canvas when clicked
+	<button onclick="draw_a()">Draw a Rectangle</button> <!--creates button that creates a rectangle on the canvas when clicked-->
 
-	<button onclick="text_a()">Draw my Name</button> //creates button that draws my name on the canvas when clicked
+	<button onclick="text_a()">Draw my Name</button> <!--creates button that draws my name on the canvas when clicked-->
 	
-	<img id="mango" src="mango.jpg" alt="mango" width='5' height='5'> //adds image to website & sizes image
+	<img id="mango" src="mango.jpg" alt="mango" width='5' height='5'> <!--adds image to website & sizes image-->
 	
-	<button onclick="image_a()">Load an Image</button> //creates button that loads image onto canvas when clicked
+	<button onclick="image_a()">Load an Image</button> <!--creates button that loads image onto canvas when clicked-->
 
-	<button onclick="clear_a()">Clear Canvas</button> //creates button that clears the canvas when clicked
+	<button onclick="clear_a()">Clear Canvas</button> <!--creates button that clears the canvas when clicked-->
 
 </div>
 
