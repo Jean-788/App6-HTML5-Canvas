@@ -55,7 +55,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	};
 
-	function image_a() {
+	window onload = function image_a() {
 	var a_canvas = document.getElementById("a");
 	var context = a_canvas.getContext("2d");
 	var img = document.getElementById("mango");
@@ -107,8 +107,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<button onclick="text_a()">Draw my Name</button>
 	
 	<img id="mango" src="mango.jpg" alt="mango" width="177" height="113">
-	
-	<canvas id="a" width="300" height="225" style="border:1px solid #000000;"></canvas>
 	
 	<button onclick="image_a()">Load an Image</button>
 
